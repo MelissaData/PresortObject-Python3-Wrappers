@@ -12,8 +12,10 @@ For further details, please visit: https://wiki.melissadata.com/images/0/08/DQT_
 
 ## Tested Environments
 
-- Windows 64-bit Python 3.8.7
+- Windows 10 64-bit Python 3.8.7, Powershell 5.1
+- Linux 64-bit Python 3.8.7, Ubuntu 20.04.05 LTS
 - Melissa Presort Object for 2024-03
+- Wrapper file(s) have not changed since 2023-09
 
 ## Getting Started
 
@@ -34,7 +36,6 @@ import mdPresort_pythoncode
 ## See also
 
 - [Melissa - Presort Object Windows Python3](https://github.com/MelissaData/PresortObject-Python3)
-- [Melissa - Presort Object Linux Python3](https://github.com/MelissaData/PresortObject-Python3)
     
 ## Contact Us
 
