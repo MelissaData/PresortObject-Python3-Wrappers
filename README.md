@@ -14,15 +14,15 @@ For further details, please visit: https://wiki.melissadata.com/images/0/08/DQT_
 
 - Windows 10 64-bit Python 3.8.7, Powershell 5.1
 - Linux 64-bit Python 3.8.7, Ubuntu 20.04.05 LTS
-- Melissa Presort Object for 2024-08
+- Melissa Presort Object for 2024-09
 - Wrapper file(s) have not changed since 2023-09
 
 ## Getting Started
 
 ### Download this project
 ```
-$ git clone https://github.com/MelissaData/PresortObject-Python3-Wrappers
-$ cd PresortObject-Python3-Wrappers
+git clone https://github.com/MelissaData/PresortObject-Python3-Wrappers
+cd PresortObject-Python3-Wrappers
 ```
 
 ### Copy wrappers to your project folder
