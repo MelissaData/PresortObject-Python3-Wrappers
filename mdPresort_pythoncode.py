@@ -915,10 +915,10 @@ class mdPresort(object):
 		return ProgramStatus(lib.mdPresortInitializeDataFiles(self.I))
 
 	def SetLicenseString(self, p1):
-		return lib.mdPresortSetLicenseString(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetLicenseString(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPathToPresortDataFiles(self, p1):
-		lib.mdPresortSetPathToPresortDataFiles(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPathToPresortDataFiles(self.I, (p1 or '').encode('utf-8'))
 
 	def GetInitializeErrorString(self):
 		return lib.mdPresortGetInitializeErrorString(self.I).decode('utf-8')
@@ -939,31 +939,31 @@ class mdPresort(object):
 		return lib.mdPresortGetDatabaseDate(self.I).decode('utf-8')
 
 	def SetZip(self, p1):
-		lib.mdPresortSetZip(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetZip(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPlus4(self, p1):
-		lib.mdPresortSetPlus4(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPlus4(self.I, (p1 or '').encode('utf-8'))
 
 	def SetCarrierRoute(self, p1):
-		lib.mdPresortSetCarrierRoute(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetCarrierRoute(self.I, (p1 or '').encode('utf-8'))
 
 	def SetWalkSequence(self, p1):
-		lib.mdPresortSetWalkSequence(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetWalkSequence(self.I, (p1 or '').encode('utf-8'))
 
 	def SetDeliveryPointCode(self, p1):
-		lib.mdPresortSetDeliveryPointCode(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDeliveryPointCode(self.I, (p1 or '').encode('utf-8'))
 
 	def SetBusinessResidentialIndicator(self, p1):
-		lib.mdPresortSetBusinessResidentialIndicator(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetBusinessResidentialIndicator(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitImprint(self, p1):
 		lib.mdPresortSetPSPermitImprint(self.I, p1)
 
 	def SetLOTNumber(self, p1):
-		lib.mdPresortSetLOTNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetLOTNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetLOTOrder(self, p1):
-		lib.mdPresortSetLOTOrder(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetLOTOrder(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSASE(self, p1):
 		lib.mdPresortSetPSASE(self.I, p1)
@@ -990,88 +990,88 @@ class mdPresort(object):
 		lib.mdPresortSetPSAltAddFmt(self.I, p1)
 
 	def SetPSCASSDate(self, p1):
-		lib.mdPresortSetPSCASSDate(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSCASSDate(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPrecanceledStamp(self, p1):
 		lib.mdPresortSetPSPrecanceledStamp(self.I, p1)
 
 	def SetPSPermitHolderName(self, p1):
-		lib.mdPresortSetPSPermitHolderName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderCompany(self, p1):
-		lib.mdPresortSetPSPermitHolderCompany(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderCompany(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderStreet(self, p1):
-		lib.mdPresortSetPSPermitHolderStreet(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderStreet(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderCity(self, p1):
-		lib.mdPresortSetPSPermitHolderCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderState(self, p1):
-		lib.mdPresortSetPSPermitHolderState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderPhone(self, p1):
-		lib.mdPresortSetPSPermitHolderPhone(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderPhone(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderEmail(self, p1):
-		lib.mdPresortSetPSPermitHolderEmail(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderEmail(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderListName(self, p1):
-		lib.mdPresortSetPSPermitHolderListName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderListName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPermitHolderZIP(self, p1):
-		lib.mdPresortSetPSPermitHolderZIP(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPermitHolderZIP(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPostOfficeOfMailingCity(self, p1):
-		lib.mdPresortSetPSPostOfficeOfMailingCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPostOfficeOfMailingCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPostOfficeOfMailingState(self, p1):
-		lib.mdPresortSetPSPostOfficeOfMailingState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPostOfficeOfMailingState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPostOfficeOfMailingZIP(self, p1):
-		lib.mdPresortSetPSPostOfficeOfMailingZIP(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPostOfficeOfMailingZIP(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentName(self, p1):
-		lib.mdPresortSetPSMailingAgentName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentCompany(self, p1):
-		lib.mdPresortSetPSMailingAgentCompany(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentCompany(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentStreet(self, p1):
-		lib.mdPresortSetPSMailingAgentStreet(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentStreet(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentCity(self, p1):
-		lib.mdPresortSetPSMailingAgentCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentState(self, p1):
-		lib.mdPresortSetPSMailingAgentState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentPhone(self, p1):
-		lib.mdPresortSetPSMailingAgentPhone(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentPhone(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSMailingAgentZIP(self, p1):
-		lib.mdPresortSetPSMailingAgentZIP(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentZIP(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationName(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationCompany(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationCompany(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationCompany(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationStreet(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationStreet(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationStreet(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationCity(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationState(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationZIP(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationZIP(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationZIP(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIndividualOrOrganizationCRID(self, p1):
-		lib.mdPresortSetPSIndividualOrOrganizationCRID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSIndividualOrOrganizationCRID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetContinueContainerNumber(self, p1):
 		lib.mdPresortSetContinueContainerNumber(self.I, p1)
@@ -1083,34 +1083,34 @@ class mdPresort(object):
 		return lib.mdPresortSetPOMasSCF(self.I, p1)
 
 	def SetPSStatementSeqNumber(self, val):
-		lib.mdPresortSetPSStatementSeqNumber(self.I, val.encode('utf-8'))
+		lib.mdPresortSetPSStatementSeqNumber(self.I, (val or '').encode('utf-8'))
 
 	def SetPSMailingDate(self, val):
-		lib.mdPresortSetPSMailingDate(self.I, val.encode('utf-8'))
+		lib.mdPresortSetPSMailingDate(self.I, (val or '').encode('utf-8'))
 
 	def SetPSFedAgencyCode(self, val):
-		lib.mdPresortSetPSFedAgencyCode(self.I, val.encode('utf-8'))
+		lib.mdPresortSetPSFedAgencyCode(self.I, (val or '').encode('utf-8'))
 
 	def SetPSCustomerNumber(self, val):
-		lib.mdPresortSetPSCustomerNumber(self.I, val.encode('utf-8'))
+		lib.mdPresortSetPSCustomerNumber(self.I, (val or '').encode('utf-8'))
 
 	def SetPSCAPSNumber(self, val):
-		lib.mdPresortSetPSCAPSNumber(self.I, val.encode('utf-8'))
+		lib.mdPresortSetPSCAPSNumber(self.I, (val or '').encode('utf-8'))
 
 	def SetPermitNumber(self, p1):
-		lib.mdPresortSetPermitNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPermitNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSNonProfitAuthNumber(self, p1):
-		lib.mdPresortSetPSNonProfitAuthNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSNonProfitAuthNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMailClass(self, p1):
-		lib.mdPresortSetMailClass(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMailClass(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPieceType(self, p1):
-		lib.mdPresortSetPieceType(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPieceType(self.I, (p1 or '').encode('utf-8'))
 
 	def SetSortType(self, p1):
-		lib.mdPresortSetSortType(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetSortType(self.I, (p1 or '').encode('utf-8'))
 
 	def SetFCM_CRRT(self, p1):
 		lib.mdPresortSetFCM_CRRT(self.I, p1)
@@ -1140,25 +1140,25 @@ class mdPresort(object):
 		lib.mdPresortSetNonMachinableType(self.I, p1)
 
 	def SetRecordID(self, p1):
-		lib.mdPresortSetRecordID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetRecordID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetSackWeight(self, p1):
-		lib.mdPresortSetSackWeight(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetSackWeight(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPieceLength(self, p1):
-		lib.mdPresortSetPieceLength(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPieceLength(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPieceHeight(self, p1):
-		lib.mdPresortSetPieceHeight(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPieceHeight(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPieceThickness(self, p1):
-		lib.mdPresortSetPieceThickness(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPieceThickness(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPieceWeight(self, p1):
-		lib.mdPresortSetPieceWeight(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPieceWeight(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPackageSize(self, p1):
-		lib.mdPresortSetPackageSize(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPackageSize(self.I, (p1 or '').encode('utf-8'))
 
 	def SetEnableCoTray(self, p1):
 		lib.mdPresortSetEnableCoTray(self.I, p1)
@@ -1173,16 +1173,16 @@ class mdPresort(object):
 		lib.mdPresortSetIgnoreDSF(self.I, val)
 
 	def SetMailersID(self, p1):
-		lib.mdPresortSetMailersID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMailersID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPrecanceledStampValue(self, p1):
-		return lib.mdPresortSetPSPrecanceledStampValue(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSPrecanceledStampValue(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPresortResidualPieces(self, p1):
 		lib.mdPresortSetPSPresortResidualPieces(self.I, p1)
 
 	def SetIMBSerialNumber(self, p1):
-		lib.mdPresortSetIMBSerialNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetIMBSerialNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPolicitalCampaignMailing(self, p1):
 		lib.mdPresortSetPSPolicitalCampaignMailing(self.I, p1)
@@ -1191,43 +1191,43 @@ class mdPresort(object):
 		lib.mdPresortSetPSOfficialElectionMail(self.I, p1)
 
 	def ProduceReports(self, p1, p2):
-		return lib.mdPresortProduceReports(self.I, p1.encode('utf-8'), p2.encode('utf-8'))
+		return lib.mdPresortProduceReports(self.I, (p1 or '').encode('utf-8'), (p2 or '').encode('utf-8'))
 
 	def SetSCFCity(self, p1):
-		lib.mdPresortSetSCFCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetSCFCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetSCFState(self, p1):
-		lib.mdPresortSetSCFState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetSCFState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetSCFZip(self, p1):
-		lib.mdPresortSetSCFZip(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetSCFZip(self.I, (p1 or '').encode('utf-8'))
 
 	def AddSCF(self):
 		return lib.mdPresortAddSCF(self.I)
 
 	def SetNDCCity(self, p1):
-		lib.mdPresortSetNDCCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetNDCCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetNDCState(self, p1):
-		lib.mdPresortSetNDCState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetNDCState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetNDCZip(self, p1):
-		lib.mdPresortSetNDCZip(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetNDCZip(self.I, (p1 or '').encode('utf-8'))
 
 	def AddNDC(self):
 		return lib.mdPresortAddNDC(self.I)
 
 	def SetDDUCity(self, p1):
-		lib.mdPresortSetDDUCity(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDDUCity(self.I, (p1 or '').encode('utf-8'))
 
 	def SetDDUState(self, p1):
-		lib.mdPresortSetDDUState(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDDUState(self.I, (p1 or '').encode('utf-8'))
 
 	def SetDDUZip(self, p1):
-		lib.mdPresortSetDDUZip(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDDUZip(self.I, (p1 or '').encode('utf-8'))
 
 	def SetDDUMoreZip(self, p1):
-		lib.mdPresortSetDDUMoreZip(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDDUMoreZip(self.I, (p1 or '').encode('utf-8'))
 
 	def AddDDU(self):
 		return lib.mdPresortAddDDU(self.I)
@@ -1245,19 +1245,19 @@ class mdPresort(object):
 		lib.mdPresortSetTTContainerSize(self.I, val)
 
 	def SetTTOther(self, val2):
-		lib.mdPresortSetTTOther(self.I, val2.encode('utf-8'))
+		lib.mdPresortSetTTOther(self.I, (val2 or '').encode('utf-8'))
 
 	def SetTTParameterPositionX(self, val):
-		lib.mdPresortSetTTParameterPositionX(self.I, val.encode('utf-8'))
+		lib.mdPresortSetTTParameterPositionX(self.I, (val or '').encode('utf-8'))
 
 	def SetTTParameterPositionY(self, val):
-		lib.mdPresortSetTTParameterPositionY(self.I, val.encode('utf-8'))
+		lib.mdPresortSetTTParameterPositionY(self.I, (val or '').encode('utf-8'))
 
 	def SetTTParameterWidth(self, val):
-		lib.mdPresortSetTTParameterWidth(self.I, val.encode('utf-8'))
+		lib.mdPresortSetTTParameterWidth(self.I, (val or '').encode('utf-8'))
 
 	def SetTTParameterHeight(self, val):
-		lib.mdPresortSetTTParameterHeight(self.I, val.encode('utf-8'))
+		lib.mdPresortSetTTParameterHeight(self.I, (val or '').encode('utf-8'))
 
 	def DoPresort(self):
 		return lib.mdPresortDoPresort(self.I)
@@ -1278,7 +1278,7 @@ class mdPresort(object):
 		return lib.mdPresortAddRecord(self.I)
 
 	def GetRecord(self, p1):
-		return lib.mdPresortGetRecord(self.I, p1.encode('utf-8'))
+		return lib.mdPresortGetRecord(self.I, (p1 or '').encode('utf-8'))
 
 	def GetFirstRecord(self):
 		return lib.mdPresortGetFirstRecord(self.I)
@@ -1503,7 +1503,7 @@ class mdPresort(object):
 		return lib.mdPresortGetDropShipZipPlus4(self.I).decode('utf-8')
 
 	def Get(self, p1):
-		return lib.mdPresortGet(self.I, p1.encode('utf-8')).decode('utf-8')
+		return lib.mdPresortGet(self.I, (p1 or '').encode('utf-8')).decode('utf-8')
 
 	def GetTotalNonAutoPieces(self):
 		return lib.mdPresortGetTotalNonAutoPieces(self.I)
@@ -1599,13 +1599,13 @@ class mdPresort(object):
 		return lib.mdPresortGetChargeTotal(self.I, p1)
 
 	def GetDestSCFInfo(self, p1):
-		return lib.mdPresortGetDestSCFInfo(self.I, p1.encode('utf-8'))
+		return lib.mdPresortGetDestSCFInfo(self.I, (p1 or '').encode('utf-8'))
 
 	def GetDestNDCInfo(self, p1):
-		return lib.mdPresortGetDestNDCInfo(self.I, p1.encode('utf-8'))
+		return lib.mdPresortGetDestNDCInfo(self.I, (p1 or '').encode('utf-8'))
 
 	def GetDestDDUInfo(self, p1):
-		return lib.mdPresortGetDestDDUInfo(self.I, p1.encode('utf-8'))
+		return lib.mdPresortGetDestDDUInfo(self.I, (p1 or '').encode('utf-8'))
 
 	def GetDestContainersTotal(self, p1):
 		return lib.mdPresortGetDestContainersTotal(self.I, p1)
@@ -1620,58 +1620,58 @@ class mdPresort(object):
 		return lib.mdPresortGetDestChargeTotal(self.I, p1)
 
 	def SetTwoFtTrayMaximum(self, p1):
-		lib.mdPresortSetTwoFtTrayMaximum(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetTwoFtTrayMaximum(self.I, (p1 or '').encode('utf-8'))
 
 	def SetTwoFtTrayMinimum(self, p1):
-		lib.mdPresortSetTwoFtTrayMinimum(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetTwoFtTrayMinimum(self.I, (p1 or '').encode('utf-8'))
 
 	def SetOneFtTrayMaximum(self, p1):
-		lib.mdPresortSetOneFtTrayMaximum(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetOneFtTrayMaximum(self.I, (p1 or '').encode('utf-8'))
 
 	def SetOneFtTrayMinimum(self, p1):
-		lib.mdPresortSetOneFtTrayMinimum(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetOneFtTrayMinimum(self.I, (p1 or '').encode('utf-8'))
 
 	def SetBundleMaximum(self, p1):
-		lib.mdPresortSetBundleMaximum(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetBundleMaximum(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSSCFZipAutomationSort(self, p1):
-		return lib.mdPresortSetPSSCFZipAutomationSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSSCFZipAutomationSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSSCFZipNonAutomationSort(self, p1):
-		return lib.mdPresortSetPSSCFZipNonAutomationSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSSCFZipNonAutomationSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSSCFZipECRRTSort(self, p1):
-		return lib.mdPresortSetPSSCFZipECRRTSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSSCFZipECRRTSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSSCFZipCoSack(self, p1):
-		return lib.mdPresortSetPSSCFZipCoSack(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSSCFZipCoSack(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSNDCZipAutomationSort(self, p1):
-		return lib.mdPresortSetPSNDCZipAutomationSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSNDCZipAutomationSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSNDCZipNonAutomationSort(self, p1):
-		return lib.mdPresortSetPSNDCZipNonAutomationSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSNDCZipNonAutomationSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSNDCZipECRRTSort(self, p1):
-		return lib.mdPresortSetPSNDCZipECRRTSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSNDCZipECRRTSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSNDCZipCoSack(self, p1):
-		return lib.mdPresortSetPSNDCZipCoSack(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSNDCZipCoSack(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSDDUZipECRRTSort(self, p1):
-		return lib.mdPresortSetPSDDUZipECRRTSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSDDUZipECRRTSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPOMZipAutomationSort(self, p1):
-		return lib.mdPresortSetPSPOMZipAutomationSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSPOMZipAutomationSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPOMZipNonAutomationSort(self, p1):
-		return lib.mdPresortSetPSPOMZipNonAutomationSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSPOMZipNonAutomationSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPOMZipECRRTSort(self, p1):
-		return lib.mdPresortSetPSPOMZipECRRTSort(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSPOMZipECRRTSort(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSPOMZipCoSack(self, p1):
-		return lib.mdPresortSetPSPOMZipCoSack(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetPSPOMZipCoSack(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSIncludeResidualPieces(self, p1):
 		lib.mdPresortSetPSIncludeResidualPieces(self.I, p1)
@@ -1701,13 +1701,13 @@ class mdPresort(object):
 		return lib.mdPresortGetIMBSerialNumber(self.I).decode('utf-8')
 
 	def SetPSMailingAgentCRID(self, p1):
-		lib.mdPresortSetPSMailingAgentCRID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSMailingAgentCRID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetContainerSequenceNumber(self, p1):
-		return lib.mdPresortSetContainerSequenceNumber(self.I, p1.encode('utf-8'))
+		return lib.mdPresortSetContainerSequenceNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetPSNonProfitAuthNumberMO(self, p1):
-		lib.mdPresortSetPSNonProfitAuthNumberMO(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSNonProfitAuthNumberMO(self.I, (p1 or '').encode('utf-8'))
 
 	def SetProduceDropShipForms(self, p1):
 		return lib.mdPresortSetProduceDropShipForms(self.I, p1)
@@ -1716,160 +1716,160 @@ class mdPresort(object):
 		lib.mdPresortSetExpandedReportName(self.I, p1)
 
 	def ProduceMailDatFiles(self, p1, p2):
-		return lib.mdPresortProduceMailDatFiles(self.I, p1.encode('utf-8'), p2.encode('utf-8'))
+		return lib.mdPresortProduceMailDatFiles(self.I, (p1 or '').encode('utf-8'), (p2 or '').encode('utf-8'))
 
 	def SetPSPostOfficeOfMailingPlus4(self, p1):
-		lib.mdPresortSetPSPostOfficeOfMailingPlus4(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPSPostOfficeOfMailingPlus4(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDACSKeyLineData(self, p1):
-		lib.mdPresortSetMDACSKeyLineData(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDACSKeyLineData(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMachineID(self, p1):
-		lib.mdPresortSetMDMachineID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMachineID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDJobID(self, p1):
-		lib.mdPresortSetMDJobID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDJobID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRIDEAllianceVersion(self, p1):
-		lib.mdPresortSetMDHDRIDEAllianceVersion(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRIDEAllianceVersion(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRHistorySequenceNumber(self, p1):
-		lib.mdPresortSetMDHDRHistorySequenceNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRHistorySequenceNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRHistoryStatus(self, p1):
-		lib.mdPresortSetMDHDRHistoryStatus(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRHistoryStatus(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRHistoricalJobID(self, p1):
-		lib.mdPresortSetMDHDRHistoricalJobID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRHistoricalJobID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRLicensedUsersJobNumber(self, p1):
-		lib.mdPresortSetMDHDRLicensedUsersJobNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRLicensedUsersJobNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRJobNameTitleIssue(self, p1):
-		lib.mdPresortSetMDHDRJobNameTitleIssue(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRJobNameTitleIssue(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRFileSource(self, p1):
-		lib.mdPresortSetMDHDRFileSource(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRFileSource(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRUserLicenseCode(self, p1):
-		lib.mdPresortSetMDHDRUserLicenseCode(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRUserLicenseCode(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRMailDatSoftwareVendorName(self, p1):
-		lib.mdPresortSetMDHDRMailDatSoftwareVendorName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRMailDatSoftwareVendorName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRMailDatSoftwareProductsName(self, p1):
-		lib.mdPresortSetMDHDRMailDatSoftwareProductsName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRMailDatSoftwareProductsName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRMailDatSoftwareVersion(self, p1):
-		lib.mdPresortSetMDHDRMailDatSoftwareVersion(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRMailDatSoftwareVersion(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRMailDatSoftwareVendorEmail(self, p1):
-		lib.mdPresortSetMDHDRMailDatSoftwareVendorEmail(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRMailDatSoftwareVendorEmail(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDReDocSenderCRID(self, p1):
-		lib.mdPresortSetMDHDReDocSenderCRID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDReDocSenderCRID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDSEGVerificationFacilityName(self, p1):
-		lib.mdPresortSetMDSEGVerificationFacilityName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDSEGVerificationFacilityName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDSEGVerificationFacilityZipPlus4(self, p1):
-		lib.mdPresortSetMDSEGVerificationFacilityZipPlus4(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDSEGVerificationFacilityZipPlus4(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDROriginalSoftwareVendorName(self, p1):
-		lib.mdPresortSetMDHDROriginalSoftwareVendorName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDROriginalSoftwareVendorName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDROriginalSoftwareProductsName(self, p1):
-		lib.mdPresortSetMDHDROriginalSoftwareProductsName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDROriginalSoftwareProductsName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDROriginalSoftwareVersion(self, p1):
-		lib.mdPresortSetMDHDROriginalSoftwareVersion(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDROriginalSoftwareVersion(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDROriginalSoftwareVendorEmail(self, p1):
-		lib.mdPresortSetMDHDROriginalSoftwareVendorEmail(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDROriginalSoftwareVendorEmail(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRContactName(self, p1):
-		lib.mdPresortSetMDHDRContactName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRContactName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRContactPhone(self, p1):
-		lib.mdPresortSetMDHDRContactPhone(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRContactPhone(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDHDRContactEMail(self, p1):
-		lib.mdPresortSetMDHDRContactEMail(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDHDRContactEMail(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTMailOwnerID(self, p1):
-		lib.mdPresortSetMDCPTMailOwnerID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTMailOwnerID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTOwnerCRID(self, p1):
-		lib.mdPresortSetMDCPTOwnerCRID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTOwnerCRID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTMailOwnersMailingRefID(self, p1):
-		lib.mdPresortSetMDCPTMailOwnersMailingRefID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTMailOwnersMailingRefID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTPostalPriceIncID(self, p1):
-		lib.mdPresortSetMDCPTPostalPriceIncID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTPostalPriceIncID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTPostalPriceIncType(self, p1):
-		lib.mdPresortSetMDCPTPostalPriceIncType(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTPostalPriceIncType(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTStandParcelType(self, p1):
-		lib.mdPresortSetMDCPTStandParcelType(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTStandParcelType(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTStandFlatType(self, p1):
-		lib.mdPresortSetMDCPTStandFlatType(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTStandFlatType(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTUserOptField(self, p1):
-		lib.mdPresortSetMDCPTUserOptField(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTUserOptField(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTContentOfMail(self, p1):
-		lib.mdPresortSetMDCPTContentOfMail(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTContentOfMail(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCSMCSAAgreementID(self, p1):
-		lib.mdPresortSetMDCSMCSAAgreementID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCSMCSAAgreementID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDSEGDescription(self, p1):
-		lib.mdPresortSetMDSEGDescription(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDSEGDescription(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDCPTComDescription(self, p1):
-		lib.mdPresortSetMDCPTComDescription(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDCPTComDescription(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPUName(self, p1):
-		lib.mdPresortSetMDMPUName(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMPUName(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPUDescription(self, p1):
-		lib.mdPresortSetMDMPUDescription(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMPUDescription(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPADescription(self, p1):
-		lib.mdPresortSetMDMPADescription(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMPADescription(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPAMailingAgentMailerID(self, p1):
-		lib.mdPresortSetMDMPAMailingAgentMailerID(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMPAMailingAgentMailerID(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPAMailOwnerPermitNumber(self, p1):
-		lib.mdPresortSetMDMPAMailOwnerPermitNumber(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMPAMailOwnerPermitNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPAMailOwnerPermitType(self, p1):
-		lib.mdPresortSetMDMPAMailOwnerPermitType(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetMDMPAMailOwnerPermitType(self.I, (p1 or '').encode('utf-8'))
 
 	def SetMDMPAAdditionalPostagePaymentMethod(self, val):
-		lib.mdPresortSetMDMPAAdditionalPostagePaymentMethod(self.I, val.encode('utf-8'))
+		lib.mdPresortSetMDMPAAdditionalPostagePaymentMethod(self.I, (val or '').encode('utf-8'))
 
 	def SetMDMPAAdditionalPaymentPermitNumber(self, val):
-		lib.mdPresortSetMDMPAAdditionalPaymentPermitNumber(self.I, val.encode('utf-8'))
+		lib.mdPresortSetMDMPAAdditionalPaymentPermitNumber(self.I, (val or '').encode('utf-8'))
 
 	def SetMDMPAAdditionalPaymentPermitZipPlus4(self, val):
-		lib.mdPresortSetMDMPAAdditionalPaymentPermitZipPlus4(self.I, val.encode('utf-8'))
+		lib.mdPresortSetMDMPAAdditionalPaymentPermitZipPlus4(self.I, (val or '').encode('utf-8'))
 
 	def SetMDCCRCharacteristic(self, val):
-		lib.mdPresortSetMDCCRCharacteristic(self.I, val.encode('utf-8'))
+		lib.mdPresortSetMDCCRCharacteristic(self.I, (val or '').encode('utf-8'))
 
 	def SetMDCCRCharacteristicType(self, val):
-		lib.mdPresortSetMDCCRCharacteristicType(self.I, val.encode('utf-8'))
+		lib.mdPresortSetMDCCRCharacteristicType(self.I, (val or '').encode('utf-8'))
 
 	def SetPOMLocaleKey(self, p1):
-		lib.mdPresortSetPOMLocaleKey(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetPOMLocaleKey(self.I, (p1 or '').encode('utf-8'))
 
 	def SetDDULocaleKey(self, p1):
-		lib.mdPresortSetDDULocaleKey(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDDULocaleKey(self.I, (p1 or '').encode('utf-8'))
 
 	def SetDDUPostalCode(self, p1):
-		lib.mdPresortSetDDUPostalCode(self.I, p1.encode('utf-8'))
+		lib.mdPresortSetDDUPostalCode(self.I, (p1 or '').encode('utf-8'))
