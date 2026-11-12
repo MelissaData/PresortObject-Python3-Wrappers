@@ -315,6 +315,8 @@ lib.mdPresortGetServiceTypeID.argtypes = [c_void_p]
 lib.mdPresortGetServiceTypeID.restype = c_char_p
 lib.mdPresortSetProducePallets.argtypes = [c_void_p, c_bool]
 lib.mdPresortSetProducePallets.restype = c_bool
+lib.mdPresortSetPalletSequenceNumber.argtypes = [c_void_p, c_char_p]
+lib.mdPresortSetPalletSequenceNumber.restype = c_bool
 lib.mdPresortSetIgnoreMinSCFPallet.argtypes = [c_void_p, c_bool]
 lib.mdPresortSetIgnoreMinSCFPallet.restype = None
 lib.mdPresortGetPalletsTotal.argtypes = [c_void_p]
@@ -1123,6 +1125,9 @@ class mdPresort(object):
 
 	def SetProducePallets(self, p1):
 		return lib.mdPresortSetProducePallets(self.I, p1)
+
+	def SetPalletSequenceNumber(self, p1):
+		return lib.mdPresortSetPalletSequenceNumber(self.I, (p1 or '').encode('utf-8'))
 
 	def SetIgnoreMinSCFPallet(self, val):
 		lib.mdPresortSetIgnoreMinSCFPallet(self.I, val)
